@@ -32,10 +32,12 @@
             this.nombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Longitud = new System.Windows.Forms.RadioButton();
-            this.Bonito = new System.Windows.Forms.RadioButton();
             this.alturaBox = new System.Windows.Forms.TextBox();
             this.altura = new System.Windows.Forms.RadioButton();
+            this.Longitud = new System.Windows.Forms.RadioButton();
+            this.Bonito = new System.Windows.Forms.RadioButton();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +74,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.alturaBox);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.altura);
             this.groupBox1.Controls.Add(this.Longitud);
             this.groupBox1.Controls.Add(this.Bonito);
@@ -87,6 +91,26 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
+            // 
+            // alturaBox
+            // 
+            this.alturaBox.Location = new System.Drawing.Point(285, 143);
+            this.alturaBox.Margin = new System.Windows.Forms.Padding(4);
+            this.alturaBox.Name = "alturaBox";
+            this.alturaBox.Size = new System.Drawing.Size(101, 22);
+            this.alturaBox.TabIndex = 12;
+            // 
+            // altura
+            // 
+            this.altura.AutoSize = true;
+            this.altura.Location = new System.Drawing.Point(154, 144);
+            this.altura.Margin = new System.Windows.Forms.Padding(4);
+            this.altura.Name = "altura";
+            this.altura.Size = new System.Drawing.Size(123, 20);
+            this.altura.TabIndex = 11;
+            this.altura.TabStop = true;
+            this.altura.Text = "Dime si soy alto";
+            this.altura.UseVisualStyleBackColor = true;
             // 
             // Longitud
             // 
@@ -112,25 +136,27 @@
             this.Bonito.Text = "Dime si mi nombre es bonito";
             this.Bonito.UseVisualStyleBackColor = true;
             // 
-            // alturaBox
+            // button3
             // 
-            this.alturaBox.Location = new System.Drawing.Point(285, 143);
-            this.alturaBox.Margin = new System.Windows.Forms.Padding(4);
-            this.alturaBox.Name = "alturaBox";
-            this.alturaBox.Size = new System.Drawing.Size(101, 22);
-            this.alturaBox.TabIndex = 12;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(230, 260);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(181, 51);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "desconectar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // altura
+            // button1
             // 
-            this.altura.AutoSize = true;
-            this.altura.Location = new System.Drawing.Point(154, 144);
-            this.altura.Margin = new System.Windows.Forms.Padding(4);
-            this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(123, 20);
-            this.altura.TabIndex = 11;
-            this.altura.TabStop = true;
-            this.altura.Text = "Dime si soy alto";
-            this.altura.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(32, 266);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 38);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "conectar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -157,6 +183,8 @@
         private System.Windows.Forms.RadioButton Bonito;
         private System.Windows.Forms.TextBox alturaBox;
         private System.Windows.Forms.RadioButton altura;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

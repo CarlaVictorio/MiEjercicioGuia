@@ -34,6 +34,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
+            this.alturaBox = new System.Windows.Forms.TextBox();
+            this.altura = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +72,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.alturaBox);
+            this.groupBox1.Controls.Add(this.altura);
             this.groupBox1.Controls.Add(this.Longitud);
             this.groupBox1.Controls.Add(this.Bonito);
             this.groupBox1.Controls.Add(this.label2);
@@ -108,6 +112,26 @@
             this.Bonito.Text = "Dime si mi nombre es bonito";
             this.Bonito.UseVisualStyleBackColor = true;
             // 
+            // alturaBox
+            // 
+            this.alturaBox.Location = new System.Drawing.Point(285, 143);
+            this.alturaBox.Margin = new System.Windows.Forms.Padding(4);
+            this.alturaBox.Name = "alturaBox";
+            this.alturaBox.Size = new System.Drawing.Size(101, 22);
+            this.alturaBox.TabIndex = 12;
+            // 
+            // altura
+            // 
+            this.altura.AutoSize = true;
+            this.altura.Location = new System.Drawing.Point(154, 144);
+            this.altura.Margin = new System.Windows.Forms.Padding(4);
+            this.altura.Name = "altura";
+            this.altura.Size = new System.Drawing.Size(123, 20);
+            this.altura.TabIndex = 11;
+            this.altura.TabStop = true;
+            this.altura.Text = "Dime si soy alto";
+            this.altura.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -131,6 +155,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton Longitud;
         private System.Windows.Forms.RadioButton Bonito;
+        private System.Windows.Forms.TextBox alturaBox;
+        private System.Windows.Forms.RadioButton altura;
     }
 }
 

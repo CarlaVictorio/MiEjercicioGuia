@@ -32,12 +32,14 @@
             this.nombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.contador = new System.Windows.Forms.Label();
+            this.servicios = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.alturaBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.altura = new System.Windows.Forms.RadioButton();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +76,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.contador);
+            this.groupBox1.Controls.Add(this.servicios);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.alturaBox);
             this.groupBox1.Controls.Add(this.button1);
@@ -83,7 +87,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.nombre);
-            this.groupBox1.Location = new System.Drawing.Point(200, 93);
+            this.groupBox1.Location = new System.Drawing.Point(204, 95);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -92,6 +96,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
             // 
+            // contador
+            // 
+            this.contador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contador.Location = new System.Drawing.Point(299, 267);
+            this.contador.Name = "contador";
+            this.contador.Size = new System.Drawing.Size(111, 48);
+            this.contador.TabIndex = 14;
+            // 
+            // servicios
+            // 
+            this.servicios.Cursor = System.Windows.Forms.Cursors.SizeWE;
+            this.servicios.Location = new System.Drawing.Point(209, 223);
+            this.servicios.Name = "servicios";
+            this.servicios.Size = new System.Drawing.Size(268, 32);
+            this.servicios.TabIndex = 13;
+            this.servicios.Text = "¿Cuántos servicios se ha realizado?";
+            this.servicios.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(23, 276);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(172, 49);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "desconectar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // alturaBox
             // 
             this.alturaBox.Location = new System.Drawing.Point(285, 143);
@@ -99,6 +133,17 @@
             this.alturaBox.Name = "alturaBox";
             this.alturaBox.Size = new System.Drawing.Size(101, 22);
             this.alturaBox.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(23, 223);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 45);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "conectar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // altura
             // 
@@ -136,28 +181,6 @@
             this.Bonito.Text = "Dime si mi nombre es bonito";
             this.Bonito.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(230, 260);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 51);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "desconectar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(32, 266);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 38);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "conectar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,6 +208,8 @@
         private System.Windows.Forms.RadioButton altura;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button servicios;
+        private System.Windows.Forms.Label contador;
     }
 }
 
